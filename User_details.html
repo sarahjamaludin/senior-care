@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #b2dfdb, #80cbc4);
+            color: #004d40;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .title-box {
+            padding: 15px;
+            background: white;
+            color: #004d40;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .title-box h2 {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .profile-card {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card h3 {
+            margin: 0 0 8px;
+            color: #004d40;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .profile-card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .logout-link {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #d32f2f;
+            color: white; /* Ensuring the text is white */
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .logout-link:hover {
+            background-color: #c62828;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004d40;
+            color: white;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Details</h1>
+    </header>
+    <main>
+        <div class="title-box">
+            <h2>User Details</h2>
+        </div>
+        <div class="profile-card">
+            <h3>Name</h3>
+            <p id="nameDetails">Hafiz</p>
+        </div>
+        <div class="profile-card">
+            <h3>Room Number</h3>
+            <p id="roomNumber">101</p>
+        </div>
+        <div class="profile-card">
+            <h3>Health Condition</h3>
+            <p id="healthCondition">Good, needs to be monitored, fasting for 24 hours</p>
+        </div>
+        <div class="logout-link">
+            <a href="logout.php">Logout</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Oldies Care. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+

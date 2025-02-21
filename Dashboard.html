@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <div class="center-content">
+            <h2>Welcome, ${sessionScope.user.username}!</h2>
+            <div class="action-buttons">
+                <button class="btn-green" onclick="navigate('caregivers')">Caregiver Details</button>
+                <button class="btn-green" onclick="navigate('patients')">Patient Details</button>
+                <button class="btn-green" onclick="navigate('medical')">Medical Records</button>
+            </div>
+            <div id="dynamic-content">
+                <!-- Dynamic content goes here -->
+            </div>
+        </div>
+
+        <!-- Admin View Content -->
+        <div id="admin-view" class="view-content" style="display:none;">
+            <h3>Admin Dashboard</h3>
+            <div class="admin-actions">
+                <button class="btn-green" onclick="adminNavigate('manageUsers')">Manage Users</button>
+                <button class="btn-green" onclick="adminNavigate('viewReports')">View Reports</button>
+                <button class="btn-green" onclick="adminNavigate('settings')">Settings</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

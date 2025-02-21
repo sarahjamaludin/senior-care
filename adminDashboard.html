@@ -1,0 +1,105 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* Basic Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+        }
+
+        /* Background with gradient */
+        body {
+            background: linear-gradient(135deg, #b2dfdb, #80cbc4); /* Green to Blue gradient */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .main-content {
+            max-width: 800px;
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .admin-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-green {
+            padding: 12px 20px;
+            background-color: #004d40;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-green:hover {
+            background-color: #00796b;
+            transform: translateY(-3px);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            padding: 8px 12px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button class="back-button" onclick="window.location.href='dashboard_ui.html'">Back to Dashboard</button>
+    </header>
+    <div class="main-content">
+        <h2>Welcome to Admin Dashboard</h2>
+        <div class="admin-actions">
+            <button class="btn-green" onclick="adminNavigate('manageUsers')">Manage Users</button>
+            <button class="btn-green" onclick="adminNavigate('viewReports')">View Reports</button>
+            <button class="btn-green" onclick="adminNavigate('settings')">Settings</button>
+        </div>
+    </div>
+</body>
+</html>
